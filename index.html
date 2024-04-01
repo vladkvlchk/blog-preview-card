@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Blog preview card</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+      * {
+        --color-yellow: #f4d04e;
+        --color-black: #111111;
+        --color-white: #ffffff;
+        --color-grey: #7f7f7f;
+        font-family: "Figtree", sans-serif;
+      }
+
+      body {
+        margin: 0;
+        background-color: var(--color-yellow);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .card {
+        background-color: var(--color-white);
+        border-radius: 20px;
+        padding: 24px;
+        box-shadow: 8px 8px var(--color-black);
+        width: min-content;
+        outline: 1px solid var(--color-black);
+        outline-offset: -1px;
+        cursor: pointer;
+      }
+
+      .blogImage {
+        height: 200px;
+      }
+
+      .content {
+        margin-top: 24px;
+      }
+
+      .category {
+        background-color: var(--color-yellow);
+        padding: 4px 12px;
+        width: fit-content;
+        border-radius: 4px;
+        font-weight: 800;
+      }
+
+      .publishDate {
+        margin: 12px 0;
+      }
+
+      .title {
+        font-weight: 800;
+      }
+
+      .card:hover {
+        transform: translateY(-1px);
+        box-shadow: 8px 9px var(--color-black);
+      }
+      
+      .title:hover {
+        color: var(--color-yellow);
+      }
+
+      .description {
+        color: var(--color-grey);
+      }
+
+      .author {
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+      }
+
+      .avatar {
+        width: 32px;
+        height: 32px;
+        margin-right: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <picture class="blogImage">
+        <img src="./assets/images/blogimage.png" alt="blog image" />
+      </picture>
+      <div class="content">
+        <p class="category">Learning</p>
+        <p class="publishDate">Published 21 Dec 2023</p>
+        <h2 class="title">HTML & CSS foundations</h2>
+        <p class="description">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+        <div class="author">
+          <picture>
+            <img
+              class="avatar"
+              src="./assets/images/image-avatar.webp"
+              alt="avatar"
+            />
+          </picture>
+          <b>Greg Hooper</b>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
